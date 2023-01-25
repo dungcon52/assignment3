@@ -1,0 +1,58 @@
+@media only screen and (max-width: 600px) {
+  /* Banner */
+  .textname p {
+    font-size: 24px;
+  }
+  /* Menu */
+  .menu-element {
+    display: block;
+  }
+  .menu-item {
+    width: 100% !important;
+    text-align: start;
+    border-bottom: 1px solid rgba(169, 169, 169, 0.5);
+  }
+  .menu-item:first-child {
+    border-left: 1px solid rgba(169, 169, 169, 0.5);
+  }
+  .imgCV {
+    display: none;
+  }
+  /* Mục tiêu nghề + Thông tin */
+  #about {
+    display: block;
+  }
+  .target {
+    width: 100%;
+  }
+  /* Thông tin nghề nghiệp */
+  #job-info {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+  /* Chứng chỉ */
+  .cert {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+  .chungchi {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-left: none;
+  }
+  /* Dự án */
+  .project {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    row-gap: 20px;
+  }
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
+  /* Footer */
+  .mxh {
+    text-align: start;
+  }
+}

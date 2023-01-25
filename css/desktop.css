@@ -1,0 +1,358 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.bg-grey {
+  background: #f7f7f7;
+}
+.area {
+  max-width: 90%;
+  margin: auto;
+  padding: 30px 0px 30px 0px;
+}
+
+/* Banner */
+#banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.img-banner {
+  width: 100%;
+  height: 360px;
+  filter: brightness(50%);
+  object-fit: cover;
+  object-position: 50% 0%;
+  display: block;
+}
+.textname {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.textname p {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Menu */
+.menu-element {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.menu-item:first-child {
+  border-left: none;
+}
+.menu-item {
+  width: 20%;
+  text-align: center;
+  padding: 20px 20px;
+  justify-content: center;
+  border-left: 1px solid rgba(169, 169, 169, 0.5);
+  border-bottom: 1px solid rgba(169, 169, 169, 0.5);
+}
+.menu-item i {
+  color: #199cdb;
+  padding-right: 10px;
+}
+.menu-item a {
+  align-self: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+.menu-item a:hover {
+  color: #199cdb;
+  text-decoration: underline;
+}
+.menu-item img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  object-position: 0px 0px;
+}
+
+/* Mục tiêu nghề + Thông tin */
+#about {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0px;
+}
+.target {
+  line-height: 1.5;
+  width: 50%;
+}
+.left {
+  padding: 30px 80px 30px 30px;
+}
+.right {
+  padding: 30px 30px 30px 80px;
+  background-color: #eee;
+}
+.section-name {
+  margin-bottom: 30px;
+}
+.info {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.info li {
+  padding-bottom: 15px;
+}
+.per-icon {
+  color: #199cdb;
+}
+
+/* Thông tin nghề nghiệp */
+#job-info {
+  grid-template-columns: repeat(3, 32%);
+  display: grid;
+  row-gap: 20px;
+  column-gap: 2%;
+  justify-content: center;
+}
+.job-element {
+  display: grid;
+  grid-template-rows: 90px auto;
+  border: 1px solid rgba(169, 169, 169, 0.5);
+  padding: 30px 15px 30px 30px;
+}
+.rowName {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+.element-info ul {
+  padding-left: 20px;
+}
+.element-info li {
+  position: relative;
+  margin-top: 30px;
+  line-height: 1.5;
+}
+.element-info li::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #199cdb;
+  left: -20px;
+  top: 8px;
+}
+.element-time {
+  margin-bottom: 15px;
+}
+.job-element i {
+  font-size: 2rem;
+}
+.now {
+  padding: 3px 8px;
+  background-clip: border-box;
+  background-color: #199cdb;
+  border-radius: 3px;
+  color: white;
+  gap: 5px;
+}
+.hob-icon {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+.hob-icon div {
+  text-align: center;
+}
+.hob-icon p {
+  margin-top: 16px;
+}
+.hob-icon i {
+  padding: 10px;
+  font-size: 1.5em;
+  border: 1px solid;
+  border-radius: 50%;
+  background-color: white;
+  color: #199cdb;
+}
+.kynang {
+  display: grid;
+  grid-template-rows: repeat(4, 50px);
+  row-gap: 15px;
+  padding-top: 15px;
+}
+.kynang p {
+  margin-bottom: 10px;
+}
+.thangdiem1 {
+  display: inline-block;
+  background-color: #199cdb;
+  height: 2px;
+  width: 25%;
+  margin: 0px 3% 10px 0px;
+}
+.thangdiem2 {
+  display: inline-block;
+  background-color: rgba(169, 169, 169, 0.5);
+  height: 2px;
+  width: 25%;
+  margin: 0px 3% 10px 0px;
+}
+
+/* Chứng chỉ giải thưởng */
+#certificate h1 {
+  padding-left: 30px;
+}
+.cert {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  margin-top: 15px;
+}
+.chungchi {
+  display: grid;
+  grid-template-columns: 37% 60%;
+  gap: 3%;
+  padding: 30px;
+}
+.chungchi-name {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+.chungchi img {
+  width: 100%;
+  display: block;
+}
+.chungchi p {
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.so1 {
+  border-bottom: 1px solid rgba(169, 169, 169, 0.5);
+}
+.so2 {
+  border-bottom: 1px solid rgba(169, 169, 169, 0.5);
+  border-left: 1px solid rgba(169, 169, 169, 0.5);
+}
+
+/* Dự án */
+.project {
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  gap: 2%;
+}
+.digitalPage {
+  text-decoration: none;
+  color: inherit;
+}
+.digitalPage:hover {
+  transform: translate(-1%, -1%);
+  color: inherit;
+}
+.project-element {
+  border: 1px solid rgba(169, 169, 169, 0.5);
+  height: 100%;
+  display: grid;
+}
+.project-img {
+  max-width: 100%;
+  display: block;
+}
+.row-title {
+  align-self: center;
+  padding: 10px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(169, 169, 169, 0.5);
+}
+.row-time {
+  align-self: center;
+  padding: 10px;
+}
+.row-time p {
+  display: inline-block;
+  padding: 5px 20px 5px 20px;
+  margin-bottom: 0;
+}
+.row-time p:first-child {
+  background-color: #199cdb;
+  color: white;
+  border-radius: 15px;
+}
+.row-info {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 38% 62%;
+  border-top: 1px solid rgba(169, 169, 169, 0.5);
+}
+
+/* Footer */
+.mxh {
+  text-align: center;
+}
+.mxh i {
+  position: relative;
+  color: #199cdb;
+  padding-right: 10px;
+  font-size: 1.8em;
+  top: 5px;
+}
+.mxh li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+.mxh a {
+  text-decoration: none;
+  color: gray;
+}
+.mxh a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+/* for Javascript ẩn thông tin job*/
+.hidden {
+  display: none;
+}
+.btnView {
+  font-size: 12px;
+  background-color: #ff9;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 5px 10px;
+  display: none;
+}
+.btnView i {
+  font-size: small;
+}
+.job-element:hover .btnView {
+  display: block;
+}
+/* for Javascript ẩn thông tin cá nhân*/
+.cover {
+  padding: 30px 30px 30px 80px;
+  background-color: #eee;
+}
+.cover .input-email {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.cover .input-email:hover {
+  border: 1px solid #199cdb;
+  height: 2.5em;
+  box-shadow: 0 0 5px 3px rgba(191, 239, 255, 0.5);
+}
+.cover .btnSubmit {
+  margin-top: 15px;
+  padding: 3px;
+  color: #eee;
+  background-color: #199cdb;
+  border: none;
+  border-radius: 5px;
+}
